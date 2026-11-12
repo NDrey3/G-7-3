@@ -3,45 +3,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: $color-cornflower-blue;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 12px;
   padding: 20px 20px 32px;
+  overflow: hidden;
+  position: relative;
 
   // Удалить модификаторы у элементов и фоновые картинки. Заменить изображениями в разметке!
-
-  &--privileges {
-    background-image: url("../images/advice-image-1-desktop.jpg");
-  }
-
-  &--rating {
-    background-image: url("../images/advice-image-2-desktop.jpg");
-  }
-
-  &--gold {
-    background-image: url("../images/advice-image-3-desktop.jpg");
-  }
-
-  &--tax-deduction {
-    background-image: url("../images/advice-image-4-desktop.jpg");
-  }
-
-  &--sbp {
-    background-image: url("../images/advice-image-5-desktop.jpg");
-  }
-
-  &--dismissal {
-    background-image: url("../images/advice-image-6-desktop.jpg");
-  }
-
-  &--hide-balance {
-    background-image: url("../images/advice-image-7-desktop.jpg");
-  }
-
-  &--credit {
-    background-image: url("../images/advice-image-8-desktop.jpg");
-  }
 
   &__top {
     display: flex;
@@ -67,5 +34,14 @@
 
   &__btn {
     padding: 14px;
+  }
+
+  &__img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 }

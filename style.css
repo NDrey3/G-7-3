@@ -470,35 +470,10 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #5DA0ED;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 12px;
   padding: 20px 20px 32px;
-}
-.advice-card--privileges {
-  background-image: url("../images/advice-image-1-desktop.jpg");
-}
-.advice-card--rating {
-  background-image: url("../images/advice-image-2-desktop.jpg");
-}
-.advice-card--gold {
-  background-image: url("../images/advice-image-3-desktop.jpg");
-}
-.advice-card--tax-deduction {
-  background-image: url("../images/advice-image-4-desktop.jpg");
-}
-.advice-card--sbp {
-  background-image: url("../images/advice-image-5-desktop.jpg");
-}
-.advice-card--dismissal {
-  background-image: url("../images/advice-image-6-desktop.jpg");
-}
-.advice-card--hide-balance {
-  background-image: url("../images/advice-image-7-desktop.jpg");
-}
-.advice-card--credit {
-  background-image: url("../images/advice-image-8-desktop.jpg");
+  overflow: hidden;
+  position: relative;
 }
 .advice-card__top {
   display: flex;
@@ -521,6 +496,14 @@ a {
 }
 .advice-card__btn {
   padding: 14px;
+}
+.advice-card__img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .press-room__title {
