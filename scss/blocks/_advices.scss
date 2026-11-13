@@ -4,5 +4,17 @@
     font-size: 40px;
     line-height: 46px;
     text-align: center;
+
+    @include vp-tablet {
+      margin: 0 0 40px;
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    @include vp-mobile {
+      margin: 0 0 30px;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }

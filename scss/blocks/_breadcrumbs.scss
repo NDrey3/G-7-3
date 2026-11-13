@@ -2,6 +2,15 @@
   padding: 20px 0 0;
   margin: 0 0 32px 0;
 
+  @include vp-tablet {
+    margin: 0 0 30px 0;
+  }
+
+  @include vp-mobile {
+    padding: 15px 0 0;
+    margin: 0 0 15px 0;
+  }
+
   &--alternate {
     .breadcrumbs__list {
       justify-content: flex-start;
@@ -24,6 +33,11 @@
     line-height: 18px;
     position: relative;
     text-decoration: none;
+
+    @include vp-mobile {
+      font-size: 12px;
+      line-height: 16px;
+    }
 
     &:not(.breadcrumbs__link--active) {
       color: $color-manatee-1;
