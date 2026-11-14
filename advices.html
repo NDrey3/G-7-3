@@ -14,8 +14,11 @@
     <div class="container">
       <div class="header__content">
         <a class="header__logo-link" href="#">
-          <img class="header__logo-image" src="images/logo-gazprombank-light-large.svg" width="170" height="36"
-            alt="Логотип Газпромбанк">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="images/logo-gazprombank-light-small.svg">
+            <img class="header__logo-image" src="images/logo-gazprombank-light-large.svg" width="170" height="36"
+              alt="Логотип Газпромбанк">
+          </picture>
         </a>
         <button class="header__burger" type="button" aria-label="Открыть меню">
           <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
@@ -229,9 +232,9 @@
                 <div class="features-card__picture">
                   <picture>
                     <source media="(max-width: 767px)"
-                      srcset="images/advices/features-image-4-mobile.png 1x, images/advices/features-image-4-mobile@2x.png 2x">
+                      srcset="images/advices/features-image-1-mobile.png 1x, images/advices/features-image-1-mobile@2x.png 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="images/advices/features-image-4-tablet.png 1x, images/advices/features-image-4-tablet@2x.png 2x">
+                      srcset="images/advices/features-image-1-tablet.png 1x, images/advices/features-image-1-tablet@2x.png 2x">
                     <img class="features-card__img" src="images/advices/features-image-1-desktop.png"
                       srcset="images/advices/features-image-1-desktop@2x.png 2x" height="180" width="280"
                       alt="Иллюстрация быстрого кредита наличными">
@@ -247,7 +250,7 @@
                 <div class="features-card__inner">
                   <span class="features-card__label">карты</span>
                   <h2 class="features-card__title">Дебетовая карта UnionPay</h2>
-                  <p class="features-card__note">Для покупок за рубежом и в России</p>
+                  <p class="features-card__note">Для покупок за&nbsp;рубежом и&nbsp;в&nbsp;России</p>
                 </div>
                 <div class="features-card__picture">
                   <picture>

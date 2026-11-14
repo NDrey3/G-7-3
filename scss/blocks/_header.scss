@@ -7,11 +7,22 @@
     gap: 20px;
     justify-content: space-between;
     padding: 22px 0;
+
+    @include vp-tablet {
+      padding: 15px 0;
+    }
   }
 
   &__logo {
     height: 36px;
     width: 170px;
+  }
+
+  &__logo-image {
+    @include vp-tablet {
+      width: 36px;
+      height: 36px;
+    }
   }
 
   &__burger {

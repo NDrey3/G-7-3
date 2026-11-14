@@ -2,15 +2,36 @@
   background-color: $color-solitude-2;
   padding: 36px 0;
 
+  @include vp-mobile {
+    padding: 30px 0;
+  }
+
   &__content {
     align-items: center;
     display: flex;
     position: relative;
+
+    @include vp-mobile {
+      flex-direction: column;
+    }
   }
 
   &__logo-link {
     display: flex;
     margin: 0 80px 0 0;
+
+    @include vp-tablet {
+      position: absolute;
+      left: 0;
+      top: -6px;
+    }
+
+    @include vp-mobile {
+      position: unset;
+      margin: 0 0 20px;
+      width: 151px;
+      height: 32px;
+    }
   }
 
   &__contacts-list {
@@ -21,11 +42,28 @@
     margin: 0;
     max-width: 500px;
     padding: 0;
+
+    @include vp-tablet {
+      max-width: 100%;
+      padding: 0 0 0 250px;
+    }
+
+    @include vp-mobile {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0 0 20px;
+    }
   }
 
   &__contacts-item {
     display: flex;
     flex-direction: column;
+
+    @include vp-mobile {
+      align-items: center;
+    }
   }
 
   &__contacts-text {
@@ -33,6 +71,11 @@
     font-size: 13px;
     line-height: 16px;
     margin: 0 0 4px 0;
+
+    @include vp-mobile {
+      margin: 0 0 5px 0;
+      font-size: 12px;
+    }
   }
 
   &__contacts-phone {
@@ -42,12 +85,21 @@
     font-weight: 600;
     line-height: 28px;
     text-decoration: none;
+
+    @include vp-mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &__info {
     align-items: center;
     display: flex;
     margin: 0 0 0 auto;
+
+    @include vp-tablet {
+      display: none;
+    }
   }
 
   &__info-text {
@@ -87,5 +139,14 @@
     position: absolute;
     right: 0;
     bottom: -28px;
+
+    @include vp-tablet {
+      bottom: -4px;
+      left: 0;
+    }
+
+    @include vp-mobile {
+      position: unset;
+    }
   }
 }
