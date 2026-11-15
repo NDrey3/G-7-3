@@ -16,8 +16,23 @@
     line-height: 16px;
   }
 
+  &:hover,
+  &:focus-visible {
+    background-color: $color-free-speech-blue;
+  }
+
   &--invert {
     color: $color-royal-blue;
     background-color: $color-white;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-solitude-3;
+    }
+  }
+
+  &--disabled {
+    color: $color-manatee-2;
+    background-color: $color-white-smoke;
   }
 }
