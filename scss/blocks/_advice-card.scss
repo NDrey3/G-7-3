@@ -18,6 +18,11 @@
     padding: 15px 15px 20px;
   }
 
+  &:hover &__btn,
+  &:focus-visible &__btn {
+    background-color: $color-free-speech-blue;
+  }
+
   // Удалить модификаторы у элементов и фоновые картинки. Заменить изображениями в разметке!
 
   &__top {

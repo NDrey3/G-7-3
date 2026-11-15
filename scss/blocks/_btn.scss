@@ -10,6 +10,7 @@
   font-weight: 500;
   text-decoration: none;
   background-color: $color-royal-blue;
+  cursor: pointer;
 
   @include vp-tablet {
     font-size: 12px;
@@ -34,5 +35,6 @@
   &--disabled {
     color: $color-manatee-2;
     background-color: $color-white-smoke;
+    cursor: none;
   }
 }

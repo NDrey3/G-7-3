@@ -453,6 +453,9 @@ a {
   position: relative;
   text-decoration: none;
 }
+.breadcrumbs__link--disabled {
+  color: #1E222E;
+}
 @media (max-width: 767px) {
   .breadcrumbs__link {
     font-size: 12px;
@@ -461,6 +464,9 @@ a {
 }
 .breadcrumbs__link:not(.breadcrumbs__link--active) {
   color: #8E9096;
+}
+.breadcrumbs__link:not(.breadcrumbs__link--active):hover, .breadcrumbs__link:not(.breadcrumbs__link--active):focus-visible {
+  color: #476BF0;
 }
 .breadcrumbs__link:not(.breadcrumbs__link--active)::after {
   content: "";
@@ -486,6 +492,7 @@ a {
   font-weight: 500;
   text-decoration: none;
   background-color: #476BF0;
+  cursor: pointer;
 }
 @media (max-width: 1023px) {
   .btn {
@@ -506,6 +513,7 @@ a {
 .btn--disabled {
   color: #9A9BA0;
   background-color: #F0F0F0;
+  cursor: none;
 }
 
 .advices__title {
@@ -570,6 +578,9 @@ a {
     min-height: 320px;
     padding: 15px 15px 20px;
   }
+}
+.advice-card:hover .advice-card__btn, .advice-card:focus-visible .advice-card__btn {
+  background-color: #3356D7;
 }
 .advice-card__top {
   display: flex;
@@ -712,6 +723,7 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .press-room__newsletter-image {
@@ -723,6 +735,7 @@ a {
   margin: 0 0 10px;
   font-size: 20px;
   line-height: 24px;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .press-room__newsletter-title {
@@ -744,6 +757,7 @@ a {
   margin: 0 0 60px;
   font-size: 15px;
   line-height: 22px;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .press-room__newsletter-text {
@@ -762,6 +776,7 @@ a {
 }
 .press-room__newsletter-btn {
   width: 115px;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .press-room__newsletter-btn {
@@ -791,6 +806,9 @@ a {
   border-radius: 50%;
   background-color: #EDEEEF;
 }
+.socials__link:hover, .socials__link:focus-visible {
+  background-color: #DBDBDD;
+}
 @media (max-width: 1023px) {
   .socials__link {
     width: 40px;
@@ -815,6 +833,15 @@ a {
 .news__link {
   display: block;
   background-color: #F4F6FA;
+}
+.news__link:hover, .news__link:focus-visible {
+  background-color: #EBF0FA;
+}
+.news__link:hover .news__title, .news__link:focus-visible .news__title {
+  color: #476BF0;
+}
+.news__link:hover .news__text, .news__link:focus-visible .news__text {
+  text-decoration: none;
 }
 .news__image {
   width: 100%;
@@ -1283,6 +1310,9 @@ a {
   line-height: 28px;
   text-decoration: none;
 }
+.footer__contacts-phone:hover, .footer__contacts-phone:focus-visible {
+  color: #476BF0;
+}
 @media (max-width: 767px) {
   .footer__contacts-phone {
     font-size: 18px;
@@ -1325,6 +1355,9 @@ a {
   justify-content: center;
   text-decoration: none;
   width: 40px;
+}
+.footer__app-link:hover, .footer__app-link:focus-visible {
+  background-color: #DBDBDD;
 }
 .footer__note {
   color: rgba(106, 110, 128, 0.4);
