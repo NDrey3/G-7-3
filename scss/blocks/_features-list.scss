@@ -13,5 +13,14 @@
 
   &--alternate {
     grid-template-columns: repeat(4, 1fr);
+
+    @include vp-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    @include vp-mobile {
+      gap: 15px;
+    }
   }
 }
