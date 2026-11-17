@@ -558,6 +558,7 @@ a {
   padding: 20px 20px 32px;
   overflow: hidden;
   position: relative;
+  background-color: #173CA9;
 }
 @media (max-width: 1023px) {
   .advice-card {
@@ -575,11 +576,18 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0 0 20px 0;
+  margin: 0 0 220px 0;
+  z-index: 2;
+}
+@media (max-width: 1023px) {
+  .advice-card__top {
+    margin: 0 0 150px 0;
+  }
 }
 @media (max-width: 767px) {
   .advice-card__top {
     gap: 5px;
+    margin: 0 0 120px 0;
   }
 }
 @media (max-width: 1023px) {
@@ -599,6 +607,7 @@ a {
   line-height: 16px;
   font-weight: 700;
   color: #FFFFFF;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .advice-card__label {
@@ -617,6 +626,7 @@ a {
   line-height: 24px;
   font-weight: 700;
   color: #FFFFFF;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .advice-card__title {
@@ -633,6 +643,7 @@ a {
 }
 .advice-card__btn {
   padding: 14px;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .advice-card__btn {
@@ -644,9 +655,18 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: #3356D7;
+  min-height: 480px;
+  z-index: 1;
+}
+@media (max-width: 1023px) {
+  .advice-card__img-bg {
+    min-height: 380px;
+  }
+}
+@media (max-width: 767px) {
+  .advice-card__img-bg {
+    min-height: 320px;
+  }
 }
 
 .press-room__title {
@@ -693,6 +713,7 @@ a {
   padding: 20px;
   border-radius: 12px;
   background-color: #F4F6FF;
+  overflow: hidden;
   position: relative;
 }
 @media (max-width: 1023px) {
@@ -708,10 +729,10 @@ a {
 }
 .press-room__newsletter-image {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .press-room__newsletter-image {
@@ -723,6 +744,7 @@ a {
   margin: 0 0 10px;
   font-size: 20px;
   line-height: 24px;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .press-room__newsletter-title {
@@ -744,6 +766,7 @@ a {
   margin: 0 0 60px;
   font-size: 15px;
   line-height: 22px;
+  z-index: 2;
 }
 @media (max-width: 1023px) {
   .press-room__newsletter-text {
@@ -761,6 +784,7 @@ a {
   }
 }
 .press-room__newsletter-btn {
+  z-index: 2;
   width: 115px;
 }
 @media (max-width: 1023px) {
@@ -945,9 +969,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   background-color: #E7EFFF;
   border-radius: 12px;
   padding: 32px;
+  height: 100%;
 }
 @media (max-width: 1023px) {
   .features-card {
@@ -1111,13 +1137,13 @@ a {
 }
 @media (max-width: 1023px) {
   .features-card__inner {
+    max-width: 200px;
     margin: 0 0 30px;
     z-index: 2;
   }
 }
 @media (max-width: 767px) {
   .features-card__inner {
-    max-width: 200px;
     margin: 0;
   }
 }

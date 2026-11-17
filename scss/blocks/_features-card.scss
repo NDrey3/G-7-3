@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   background-color: $color-solitude-1;
   border-radius: 12px;
   padding: 32px;
+  height: 100%;
 
   @include vp-tablet {
     padding: 30px;
@@ -169,12 +171,12 @@
     flex-direction: column;
 
     @include vp-tablet {
+      max-width: 200px;
       margin: 0 0 30px;
       z-index: 2;
     }
 
     @include vp-mobile {
-      max-width: 200px;
       margin: 0;
     }
   }
