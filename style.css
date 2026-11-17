@@ -1305,6 +1305,7 @@ a {
 .footer__contacts-item {
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 @media (max-width: 767px) {
   .footer__contacts-item {
