@@ -38,6 +38,10 @@
     position: relative;
     text-decoration: none;
 
+    &--disabled {
+      color: $color-black-russian;
+    }
+
     @include vp-mobile {
       font-size: 12px;
       line-height: 16px;
@@ -45,6 +49,11 @@
 
     &:not(.breadcrumbs__link--active) {
       color: $color-manatee-1;
+
+      &:hover,
+      &:focus-visible {
+        color: $color-royal-blue;
+      }
 
       &::after {
         content: "";
